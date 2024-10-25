@@ -5,7 +5,7 @@ FROM eclipse-temurin:21-jdk-alpine
 VOLUME /tmp
 
 # Añadir el archivo JAR en el contenedor
-ARG JAR_FILE=target/demo-app-docker-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE=target/demo-spring-jenkins-0.0.1-SNAPSHOT.jar
 ADD ${JAR_FILE} app.jar
 
 # Exponer el puerto en el que la aplicación estará disponible (ajusta según tu configuración)
